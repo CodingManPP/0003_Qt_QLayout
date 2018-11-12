@@ -13,12 +13,12 @@
   <property name="windowTitle">
    <string>MyLayout</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QFontComboBox" name="fontComboBox"/>
-   </item>
+  <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <widget class="QTextEdit" name="textEdit"/>
+   </item>
+   <item>
+    <widget class="QFontComboBox" name="fontComboBox"/>
    </item>
   </layout>
  </widget>

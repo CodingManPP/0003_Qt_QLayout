@@ -14,9 +14,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QFontComboBox>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QTextEdit>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,28 +24,28 @@ QT_BEGIN_NAMESPACE
 class Ui_MyLayout
 {
 public:
-    QVBoxLayout *verticalLayout;
-    QFontComboBox *fontComboBox;
+    QHBoxLayout *horizontalLayout;
     QTextEdit *textEdit;
+    QFontComboBox *fontComboBox;
 
     void setupUi(QWidget *MyLayout)
     {
         if (MyLayout->objectName().isEmpty())
             MyLayout->setObjectName(QStringLiteral("MyLayout"));
         MyLayout->resize(400, 164);
-        verticalLayout = new QVBoxLayout(MyLayout);
-        verticalLayout->setSpacing(6);
-        verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        fontComboBox = new QFontComboBox(MyLayout);
-        fontComboBox->setObjectName(QStringLiteral("fontComboBox"));
-
-        verticalLayout->addWidget(fontComboBox);
-
+        horizontalLayout = new QHBoxLayout(MyLayout);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         textEdit = new QTextEdit(MyLayout);
         textEdit->setObjectName(QStringLiteral("textEdit"));
 
-        verticalLayout->addWidget(textEdit);
+        horizontalLayout->addWidget(textEdit);
+
+        fontComboBox = new QFontComboBox(MyLayout);
+        fontComboBox->setObjectName(QStringLiteral("fontComboBox"));
+
+        horizontalLayout->addWidget(fontComboBox);
 
 
         retranslateUi(MyLayout);
