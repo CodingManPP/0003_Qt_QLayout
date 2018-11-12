@@ -2,6 +2,8 @@
 #include "ui_mylayout.h"
 #include <QHBoxLayout>
 
+#include <QGridLayout>
+
 MyLayout::MyLayout(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MyLayout)
@@ -18,11 +20,20 @@ MyLayout::MyLayout(QWidget *parent) :
 //    insertWidget(layout);
 #endif
 
-#if 1
+#if 0
     //【2】栅格布局管理器
-
-
+    QGridLayout *gridLayout = new QGridLayout;
+    //添加部件，从第0行0列开始，占据1行2列
+    gridLayout->addWidget(ui->fontComboBox,0,0,1,2);
+    //添加部件，从第0行2列开始，占据1行1列
+    gridLayout->addWidget(ui->pushButton,0,2,1,1);
+    //添加部件，从第0行0列开始，占据1行3列
+    gridLayout->addWidget(ui->textEdit,1,0,1,3);
+    setLayout(gridLayout);
 #endif
+
+    //【3】窗体布局管理器
+
 
 
 
