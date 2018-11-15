@@ -126,6 +126,9 @@ public:
         label_3->setBuddy(lineEdit);
         label_4->setBuddy(spinBox);
 #endif // QT_NO_SHORTCUT
+        QWidget::setTabOrder(pushButton, checkBox);
+        QWidget::setTabOrder(checkBox, lineEdit);
+        QWidget::setTabOrder(lineEdit, spinBox);
 
         retranslateUi(MyWidget);
 
