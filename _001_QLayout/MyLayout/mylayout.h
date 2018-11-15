@@ -15,6 +15,9 @@ public:
     explicit MyLayout(QWidget *parent = 0);
     ~MyLayout();
 
+private slots:
+    void on_pushButton_toggled(bool checked);
+
 private:
     Ui::MyLayout *ui;
 };
