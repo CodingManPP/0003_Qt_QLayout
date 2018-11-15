@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>130</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,10 +23,10 @@
     </rect>
    </property>
    <property name="frameShape">
-    <enum>QFrame::Box</enum>
+    <enum>QFrame::WinPanel</enum>
    </property>
    <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="lineWidth">
     <number>5</number>
