@@ -1,8 +1,7 @@
 # 0003_Qt_QLayout
 QLayout 使用
 
-## 实例3
-可扩展窗口实例
+## 实例3 可扩展窗口实例
 在构造函数中：
 ```
  //【3】可扩展窗口管理器
@@ -32,4 +31,7 @@ void MyLayout::on_pushButton_toggled(bool checked)  //显示窗口按钮
 }
 #endif
 ```
+## 实例4 分裂器QSplitter实例
+在ui文件中使用：“布局->使用分裂器水平布局”
+
 
