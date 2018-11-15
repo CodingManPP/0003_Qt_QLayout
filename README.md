@@ -42,6 +42,12 @@ void MyLayout::on_pushButton_toggled(bool checked)  //显示窗口按钮
 ## 实例6 设置Tab键的顺序
 _003_Q_buddy:设置Tab键的顺序，使用两种方式：
 * 1.直接在设计师中设置；
-* 2.通过代码设置"
+* 2.通过代码设置,在构造函数中书写
+```
+//使用代码实现Tab键的选择顺序方法2：使用代码实现
+    setTabOrder(ui->lineEdit,ui->spinBox);
+    setTabOrder(ui->spinBox,ui->pushButton);
+    setTabOrder(ui->pushButton,ui->checkBox);
+```
 
 
